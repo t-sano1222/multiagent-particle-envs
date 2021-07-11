@@ -25,8 +25,6 @@ RUN pip install jupyterlab
 RUN conda install jupyter-server-proxy -c conda-forge
 RUN jupyter labextension install @jupyterlab/server-proxy
 RUN pip install jupyter-vscode-proxy
-RUN pip install jupyterlab-nvdashboard
-RUN jupyter labextension install jupyterlab-nvdashboard
 
 # RUN curl -fsSL https://code-server.dev/install.sh | sh
 RUN curl -fOL https://github.com/cdr/code-server/releases/download/v3.4.1/code-server_3.4.1_amd64.deb
